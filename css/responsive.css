@@ -1,0 +1,195 @@
+@media (min-width: 1200px) {
+  .contact-form .button-send {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 992px) {
+  header .title-header {
+    font-size: 45px;
+    letter-spacing: 15px;
+    padding: 20px;
+  }
+
+  main .main-right .gallery {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: dense;
+  }
+
+  main .main-right .gallery img {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  main .main-right .gallery .big-image {
+    grid-column: span 2;
+    grid-row: span 2;
+    grid-auto-flow: dense;
+  }
+
+  .form-subscribe {
+    text-align: center;
+  }
+
+  .contact-form .button-send {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+/* Tablets (landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  header .title-header {
+    font-size: 60px;
+    letter-spacing: 15px;
+    padding: 20px;
+  }
+
+  main .main-right .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  main .main-right .gallery > img {
+    width: 100%;
+  }
+
+  main .main-right .gallery .big-image {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .contact .contact-container {
+    text-align: center;
+    width: 80%;
+  }
+  .contact-form .button-send {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+  header .title-header {
+    font-size: 35px;
+    letter-spacing: 15px;
+    padding: 20px;
+  }
+  main .main-right .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  main .main-right .gallery > img {
+    width: 100%;
+  }
+
+  main .main-right .gallery .big-image {
+    grid-column: span 2;
+    grid-row: span 2;
+    grid-auto-flow: dense;
+  }
+
+  main .main-right .gallery .hidden-in-tablet {
+    display: none;
+  }
+
+  .form-subscribe {
+    text-align: center;
+  }
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 480px) {
+  header {
+    background: url("../img/img-header.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  header .title-header {
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 20px;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "breakfast"
+      "gallery";
+  }
+
+  main .main-right .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input[type="text"] {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  input[type="button"] {
+    text-align: center;
+    margin: 15px;
+  }
+
+  .social-media {
+    background: url("../img/socialmedia.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .social-media .title-banner {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram{
+   font-size: 35px;
+  }
+  
+  .fa-instagram:hover {
+    color: #e4405f;
+  }
+
+  .subscribe {
+    grid-template-columns: 1fr;
+  }
+
+  .form-subscribe {
+    text-align: center;
+  }
+
+  .subscribe .subscribe-title {
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .contact {
+    background: url("../img/contact.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .contact .contact-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    width: 80%;
+  }
+}
