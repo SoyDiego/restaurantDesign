@@ -204,7 +204,7 @@ input[type="button"]:hover {
   min-height: 150px;
   background: url("../img/socialmedia.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  
 }
 
 .social-media .title-banner {
@@ -263,7 +263,7 @@ input[type="button"]:hover {
   min-height: 100vh;
   background: url("../img/contact.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+ 
 }
 
 .contact .contact-container {
